@@ -25,7 +25,6 @@ public class Custumer {
 	private String name;
 	private String code;
 	private String iban;
-	private String names;
 	private String surname;
 	private String phone;
 	private String address;
@@ -39,14 +38,13 @@ public class Custumer {
 	}
 	
 	
-	public Custumer(Long id, String name, String code, String iban, String names, String surname, String phone,
+	public Custumer(Long id, String name, String code, String iban,  String surname, String phone,
 			String address, List<CustomerProduct> products, List<?> transactions) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.code = code;
 		this.iban = iban;
-		this.names = names;
 		this.surname = surname;
 		this.phone = phone;
 		this.address = address;
@@ -87,13 +85,7 @@ public class Custumer {
 		this.iban = iban;
 	}
 
-	public String getNames() {
-		return names;
-	}
-
-	public void setNames(String names) {
-		this.names = names;
-	}
+	
 
 	public String getSurname() {
 		return surname;

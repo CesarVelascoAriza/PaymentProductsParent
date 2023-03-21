@@ -32,18 +32,23 @@ public class CustumerServiceImp implements CustumerService{
 	}
 
 	@Override
-	@Transactional()
+	@Transactional
 	public Custumer saveCostumer(Custumer costumer) {
 		return repository.save(costumer);
 	}
 
 	@Override
-	@Transactional()
+	@Transactional
 	public void deleteById(Long id) {
 		Optional<Custumer> costumer= findById(id);
 		if(costumer.isPresent()) {
 			repository.deleteById(id);
 		}
+	}
+	@Override
+	public Custumer updateCostumer(Custumer costumer) {
+		
+		return null;
 	}
 
 }

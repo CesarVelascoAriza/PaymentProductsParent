@@ -9,6 +9,7 @@ public interface CustumerService {
 	Iterable<Custumer> listAllCostumer();
 	Optional<Custumer> findById(Long id);
 	Custumer saveCostumer(Custumer costumer);
+	Custumer updateCostumer(Custumer costumer);
 	void deleteById(Long id);
 
 }
